@@ -10,9 +10,9 @@ class SearchWidget extends StatelessWidget {
     required this.provider,
   }) : super(key: key);
 
-  final Size size;
   final TextEditingController controller;
   final AppState provider;
+  final Size size;
 
   @override
   Widget build(BuildContext context) {
@@ -65,6 +65,8 @@ class SearchWidget extends StatelessWidget {
           ),
         ),
         InkWell(
+          splashFactory: NoSplash.splashFactory,
+          highlightColor: Colors.transparent,
           onTap: () {
             provider.searchEvent(controller.text);
           },

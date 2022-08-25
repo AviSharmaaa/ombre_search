@@ -19,8 +19,10 @@ class ListCard extends StatelessWidget {
         vertical: 5,
       ),
       child: ListTile(
-        // tileColor: Colors.red,
-        leading: Image.network("${event.eventImage}"),
+        leading: Image.network(
+          "${event.eventImage}",
+          width: 100,
+        ),
         title: Text(
           tags,
           style: const TextStyle(

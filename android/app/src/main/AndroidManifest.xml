@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ombre_search">
+    <uses-permission android:name="android:permission.INTERNET" />
    <application
-        android:label="ombre_search"
+        android:label="Ombre Search"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

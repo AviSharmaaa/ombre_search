@@ -42,7 +42,7 @@ class _BodyState extends State<Body> {
           child: Column(
             children: [
               const SizedBox(
-                height: 15,
+                height: 25,
               ),
               SearchWidget(
                 size: size,
